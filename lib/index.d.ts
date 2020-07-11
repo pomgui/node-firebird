@@ -5,7 +5,7 @@
 declare module 'node-firebird' {
     type DatabaseCallback = (err: any, db: Database) => void;
 
-    type TransactionCallback = (err: Options, transaction: Transaction) => void;
+    type TransactionCallback = (err: any, transaction: Transaction) => void;
     type QueryCallback = (err: any, result: any[]) => void;
     type SimpleCallback = (err: any) => void;
     type SequentialCallback = (row: any, index: number) => void;
