@@ -24,6 +24,7 @@ declare module 'node-firebird' {
         query(query: string, params: any[], callback: QueryCallback): void;
         execute(query: string, params: any[], callback: QueryCallback): void;
         sequentially(query: string, params: any[], rowCallback: SequentialCallback, callback: SimpleCallback): void;
+        getInfoSql(request: any[], callback: QueryCallback): void;
     }
 
     export interface Transaction {
